@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+  :root{
+    --rc-font-primary: 'Roboto', sans-serif;
+
+     /* Colors */
+    --color-white: #fdfcfc;
+    --color-gray: #f6f6f6;
+    --color-blue: #8eadd5;
+    --color-dark: #201f1f;
+    
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--rc-font-primary);
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+  
+  }
+
+  .nav_li {
+    display: flex;
+    gap: 40px;
+  
+  }
+
+  .nav_li > li > a{
+    color: black;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  
+  .main_container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
