@@ -41,13 +41,69 @@
   }
 
   h1 {
-    font-size: 25px;
+    font-size:px;
   }
   
   .main_container {
-    display: flex;
-    
+    display: block;
     flex-wrap: wrap;
     width: 100%;
 
+  }
+   
+  .artic-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .pic-menu {
+
+  }
+
+  .section-container {
+   
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px;
+    
+    
+    
+  }
+
+  .h1_container {
+    font-size: 50px;
+    padding-bottom: 30px;
+
+  }
+
+  .span_main {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    
+  }
+
+  #btn {
+  box-sizing: border-box;
+
+  }
+
+  section > p {
+    padding-bottom: 30px;
+  }
+
+  .container_imgs {
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    height: 50px;
+    justify-content: space-around;
+    
+  }
+
+  div > img {
+    width: 20px;
   }
