@@ -8,7 +8,7 @@
     --color-gray: #f6f6f6;
     --color-blue: #8eadd5;
     --color-dark: #201f1f;
-    
+    --color-gray-text: #737373;
   }
 
   * {
@@ -25,8 +25,11 @@
     justify-content: space-between;
     padding: 30px;
     align-items: center;
-    width: auto;
+    width: 100%;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--color-white) ;
   
   }
 
@@ -45,24 +48,23 @@
   }
   
   .main_container {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
 
   }
    
-  .artic-container {
+  .artic_container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-right: 40px;
+    padding-top: 100px;
+    
   }
 
-  .pic-menu {
 
-  }
-
-  .section-container {
+  .section_container {
    
     margin-left: 100px;
     margin-top: 40px;
@@ -82,7 +84,8 @@
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    width: 100%;
+    padding-top: 70px;
     
   }
 
@@ -97,13 +100,92 @@
 
   .container_imgs {
     display: flex;
+    box-sizing: content-box;
+    height: 50px;
+    padding-top: 60px;
+    width: 100%;
+    justify-content: center;
+  
+    
+  }
+
+  .section_imgs {
+    display: flex;
     align-items: center;
     box-sizing: content-box;
     height: 50px;
     justify-content: space-around;
-    
+    gap: 30px;
+    padding: 30px 30px;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+
   }
 
-  div > img {
-    width: 20px;
-  }
+ article > section > img {
+  width: 7em;
+ }
+
+ .container_flex {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+
+ .comment {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 150px;
+ }
+
+.box_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  align-items: center;
+}
+
+.box_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  align-items: center;
+}
+
+.box_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  align-items: center;
+}
+  
+#first_person, #second_person, #third_person {
+  width: 12em;
+}
+
+.box_1, .box_2, .box_3 {
+  background-color: var(--color-gray);
+  border-radius: 10px;
+}
+
+article > section > p {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: var(--color-gray-text);
+}
+
+article > section > h2 {
+  font-size: medium;
+}
