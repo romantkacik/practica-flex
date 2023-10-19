@@ -36,6 +36,8 @@
   .nav_li {
     display: flex;
     gap: 40px;
+    justify-content: space-around;
+    gap: 20px;
   
   }
 
@@ -43,9 +45,7 @@
     color: black;
   }
 
-  h1 {
-    font-size:px;
-  }
+ 
   
   .main_container {
     display: flex;
@@ -69,9 +69,6 @@
     margin-left: 100px;
     margin-top: 40px;
     width: 400px;
-    
-    
-    
   }
 
   .h1_container {
@@ -227,4 +224,75 @@ footer > ul > li > a {
 #footer_first_li {
   font-weight: bold;
   font-size: larger;
+}
+
+/* RESPONSIVE */ /* RESPONSIVE */ /* RESPONSIVE */
+/* RESPONSIVE */ /* RESPONSIVE */ /* RESPONSIVE */
+
+@media screen and (max-width: 720px) {
+
+
+   
+  .header-container {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--color-white) ;
+  
+  }
+
+  .nav_li {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+
+}
+
+.pic-menu {
+  display: none;
+}
+
+.artic_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 100px;
+  padding-right: 0px;
+  
+}
+
+
+.section_container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   width: 400px;
+   margin-left: 0px;
+   
+   
+}
+
+.h1_container {
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+
+}
+
+#text_container {
+  text-align: center;
+}
+
+.nav_header {
+  width: 100%;
+}
+
 }
